@@ -2,7 +2,14 @@
 
 Zian Deng, Tianyi Zhang, Zilong Zheng, Ziyu Liu, Tao Zhang, Yao Lyu, Shengbo Eben Li
 
-[Paper (PDF)](https://deng-zian.github.io/GenPA-website/assets/genpa-paper.pdf) · [Project page](https://deng-zian.github.io/GenPA-website/) · [Checkpoints](https://huggingface.co/Deduktive/GenPA) · [LIBERO dataset](https://huggingface.co/datasets/Deduktive/GenPA-LIBERO) · [BibTeX](#citation)
+[![English](docs/assets/badges/english.svg)](./README.md)
+[![中文](docs/assets/badges/chinese.svg)](./README_zh-CN.md)
+
+[![Paper PDF](docs/assets/badges/paper.svg)](https://deng-zian.github.io/GenPA-website/assets/genpa-paper.pdf)
+[![Project page](docs/assets/badges/project.svg)](https://deng-zian.github.io/GenPA-website/)
+[![Model checkpoints on Hugging Face](docs/assets/badges/weights.svg)](https://huggingface.co/Deduktive/GenPA)
+[![LIBERO dataset on Hugging Face](docs/assets/badges/dataset.svg)](https://huggingface.co/datasets/Deduktive/GenPA-LIBERO)
+[![Cite GenPA with BibTeX](docs/assets/badges/cite.svg)](#citation)
 
 GenPA adapts a pretrained FLUX.2 [klein] base 4B image generator to predict **16 robot actions in one forward pass** from RGB images, an instruction and robot state. A shared backbone for action regression and visual supervision lets us compare depth, segmentation and future prediction while holding the policy architecture fixed. [Policy architecture](docs/ARCHITECTURE.md)
 
