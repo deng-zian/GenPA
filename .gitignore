@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+!.env.example
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+checkpoints/
+outputs/
+evaluate_results/
+wandb/
+*.log
+*.tar.gz
+*.zip
+
+# Python packaging and local environments
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Downloaded model and dataset files
+/artifacts/

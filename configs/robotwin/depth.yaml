@@ -1,0 +1,112 @@
+output_dir: ${oc.env:GENPA_OUTPUT_DIR}
+batch_size: 16
+num_workers: 12
+prefetch_factor: 2
+persistent_workers: true
+lr_scheduler_type: cosine
+learning_rate: 0.0001
+warmup_steps: null
+num_epochs: 5
+max_steps: 70847
+log_every: 10
+save_every: 2000
+keep_latest_weights: 12
+keep_weight_steps:
+- 28000
+- 32000
+- 36000
+- 42000
+- 46000
+- 50000
+- 54000
+- 56000
+- 60000
+- 64000
+- 68000
+- 70847
+keep_latest_state_only: true
+eval_every: 1000
+eval_num_samples: 8
+gradient_accumulation_steps: 3
+mixed_precision: bf16
+seed: 42
+max_grad_norm: 1.0
+weight_decay: 0.01
+resume: null
+wandb:
+  enabled: false
+  workspace: null
+  project: genpa
+  name: genpa_robotwin_depth
+  group: null
+  mode: disabled
+data:
+  train:
+    _target_: genpa.robotwin.policy.data.RobotwinDataset
+    root: ${oc.env:GENPA_ROBOTWIN_DATA}
+    numeric_dir: ${oc.env:GENPA_ROBOTWIN_NUMERIC}
+    language_dir: ${oc.env:GENPA_ROBOTWIN_LANGUAGE}
+    stats_path: ${oc.env:GENPA_ROBOTWIN_STATS}
+    mode: genpa-depth
+    qwen_cache_dirs:
+    - ${oc.env:GENPA_ROBOTWIN_QWEN_0}
+    - ${oc.env:GENPA_ROBOTWIN_QWEN_1}
+    - ${oc.env:GENPA_ROBOTWIN_QWEN_2}
+    max_decoders: 6
+    sample_indices_path: null
+    is_training_set: true
+  val:
+    _target_: genpa.robotwin.policy.data.RobotwinDataset
+    root: ${oc.env:GENPA_ROBOTWIN_DATA}
+    numeric_dir: ${oc.env:GENPA_ROBOTWIN_NUMERIC}
+    language_dir: ${oc.env:GENPA_ROBOTWIN_LANGUAGE}
+    stats_path: ${oc.env:GENPA_ROBOTWIN_STATS}
+    mode: genpa-depth
+    qwen_cache_dirs:
+    - ${oc.env:GENPA_ROBOTWIN_QWEN_0}
+    - ${oc.env:GENPA_ROBOTWIN_QWEN_1}
+    - ${oc.env:GENPA_ROBOTWIN_QWEN_2}
+    max_decoders: 6
+    sample_indices_path: null
+    is_training_set: false
+model:
+  _target_: genpa.robotwin.policy.model.create_policy
+  flux2_src_path: ${oc.env:GENPA_FLUX2_SRC}
+  flux2_model_path: ${oc.env:GENPA_FLUX2_WEIGHTS}
+  ae_model_path: ${oc.env:GENPA_FLUX2_AE}
+  qwen3_model_spec: ${oc.env:GENPA_QWEN3}
+  variant: klein-base-4b
+  qwen_context_len: 128
+  prefix_length: 16
+  proprio_dim: 14
+  checkpoint_blocks: false
+  flux_learning_rate: 0.0001
+  adapter_learning_rate: 0.0001
+  visual_train_shift: 5.0
+  visual_num_train_timesteps: 1000
+  lambda_visual: 0.1
+  action_adapter_config:
+    action_horizon: 16
+    action_dim: 14
+    hidden_dim: 1024
+    num_layers: 4
+    num_heads: 8
+    mlp_ratio: 4.0
+    dropout: 0.0
+  stats_path: ${oc.env:GENPA_ROBOTWIN_STATS}
+  mode: genpa-depth
+save_weights_start_step: 28000
+save_weight_steps:
+- 28000
+- 32000
+- 36000
+- 42000
+- 46000
+- 50000
+- 54000
+- 56000
+- 60000
+- 64000
+- 68000
+- 70847
+save_final_checkpoint: true

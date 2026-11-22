@@ -1,0 +1,43 @@
+# @package _global_
+
+defaults:
+  - override /data: libero_pair
+  - override /model: genpa
+  - _self_
+
+data:
+  train:
+    qwen_text_cache_dir: ???
+    qwen_context_len: 128
+    prompt_template: "{task}"
+    nonidle_filter_path: ???
+    visual_supervision:
+      enabled: false
+
+batch_size: 10
+num_workers: 24
+prefetch_factor: 2
+persistent_workers: true
+
+learning_rate: 1.0e-4
+num_epochs: 10
+max_steps: 36750
+log_every: 10
+save_every: 2000
+keep_latest_weights: 10
+keep_latest_state_only: true
+save_final_checkpoint: true
+
+eval_every: 0
+rank_timer_every: 100
+rank_timer_sync_cuda: true
+
+gradient_accumulation_steps: 1
+weight_decay: 1.0e-2
+mixed_precision: "bf16"
+resume: null
+
+wandb:
+  enabled: false
+  project: genpa
+  name: genpa_libero

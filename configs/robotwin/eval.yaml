@@ -1,0 +1,15 @@
+robotwin_root: $GENPA_ROBOTWIN_BENCHMARK
+checkpoint: $GENPA_ROBOTWIN_CKPT
+train_config: $GENPA_ROBOTWIN_PACKAGE/configs/robotwin/depth.yaml
+stats: $GENPA_ROBOTWIN_STATS
+model_overrides:
+  flux2_src_path: $GENPA_FLUX2_SRC
+  flux2_model_path: $GENPA_FLUX2_WEIGHTS
+  ae_model_path: $GENPA_FLUX2_AE
+  qwen3_model_spec: $GENPA_QWEN3
+python_paths:
+  - $GENPA_ROBOTWIN_PACKAGE/src
+  - $GENPA_ROBOTWIN_PACKAGE
+  - $GENPA_FLUX2_SRC/src
+  - $GENPA_FLUX2_SRC
+  - $GENPA_CUROBO_SRC

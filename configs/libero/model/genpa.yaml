@@ -1,0 +1,28 @@
+_target_: genpa.models.backbones.genpa.create_genpa
+
+flux2_src_path: ???
+flux2_model_path: ???
+ae_model_path: ???
+qwen3_model_spec: ???
+variant: klein-base-4b
+
+qwen_context_len: 128
+prefix_length: 16
+proprio_dim: ${data.train.processor.proprio_output_dim}
+checkpoint_blocks: false
+
+flux_learning_rate: 1.0e-5
+adapter_learning_rate: 1.0e-4
+visual_train_shift: 5.0
+visual_num_train_timesteps: 1000
+lambda_visual: 0.1
+
+action_adapter_config:
+  action_horizon: 16
+  action_dim: ${data.train.processor.action_output_dim}
+  hidden_dim: 512
+  num_layers: 4
+  num_heads: 8
+  mlp_ratio: 4.0
+  dropout: 0.0
+
