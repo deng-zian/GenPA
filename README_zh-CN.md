@@ -11,7 +11,7 @@ Zian Deng, Tianyi Zhang, Zilong Zheng, Ziyu Liu, Tao Zhang, Yao Lyu, Shengbo Ebe
 [![Hugging Face LIBERO 数据集](docs/assets/badges/dataset.svg)](https://huggingface.co/datasets/Deduktive/GenPA-LIBERO)
 [![引用 BibTeX](docs/assets/badges/cite.svg)](#引用)
 
-GenPA 将预训练图像生成模型 FLUX.2 [klein] base 4B 用于机器人控制。输入 RGB 图像、语言指令和机器人状态，策略**一次前向计算即可预测连续 16 步动作**。动作回归和视觉监督共用同一个主干，因此可以在固定策略架构下，比较深度、分割和未来帧预测等训练目标。[策略架构](docs/ARCHITECTURE.md)
+GenPA 将预训练图像生成模型 FLUX.2 [klein] base 4B 用于机器人控制。输入 RGB 图像、语言指令和机器人状态，策略一次前向计算即可预测连续 16 步动作。动作回归和视觉监督共用同一个主干，因此可以在固定策略架构下，比较深度、分割和未来帧预测等训练目标。[策略架构](docs/ARCHITECTURE.md)
 
 <picture>
   <source media="(max-width: 600px)" srcset="docs/assets/visual-supervision-mobile.png">
