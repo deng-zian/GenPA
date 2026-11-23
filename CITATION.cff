@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: If you use GenPA, please cite the paper below.
+title: GenPA
+type: software
+authors:
+- family-names: Deng
+  given-names: Zian
+- family-names: Zhang
+  given-names: Tianyi
+- family-names: Zheng
+  given-names: Zilong
+- family-names: Liu
+  given-names: Ziyu
+- family-names: Zhang
+  given-names: Tao
+- family-names: Lyu
+  given-names: Yao
+- family-names: Li
+  given-names: Shengbo Eben
+repository-code: https://github.com/deng-zian/GenPA
+version: 1.0.0
+preferred-citation:
+  type: article
+  title: 'GenPA: Image Generators as Efficient Robot Policies'
+  authors:
+  - family-names: Deng
+    given-names: Zian
+  - family-names: Zhang
+    given-names: Tianyi
+  - family-names: Zheng
+    given-names: Zilong
+  - family-names: Liu
+    given-names: Ziyu
+  - family-names: Zhang
+    given-names: Tao
+  - family-names: Lyu
+    given-names: Yao
+  - family-names: Li
+    given-names: Shengbo Eben
+  journal: arXiv
+  year: 2026
+  doi: 10.48550/arXiv.2611.27446
+  url: https://arxiv.org/abs/2611.27446
