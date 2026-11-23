@@ -5,7 +5,7 @@ Zian Deng, Tianyi Zhang, Zilong Zheng, Ziyu Liu, Tao Zhang, Yao Lyu, Shengbo Ebe
 [![English](docs/assets/badges/english.svg)](./README.md)
 [![中文](docs/assets/badges/chinese.svg)](./README_zh-CN.md)
 
-[![论文 PDF](docs/assets/badges/paper.svg)](https://deng-zian.github.io/GenPA-website/assets/genpa-paper.pdf)
+[![arXiv 论文 2611.27446](docs/assets/badges/paper.svg)](https://arxiv.org/abs/2611.27446)
 [![项目主页](docs/assets/badges/project.svg)](https://deng-zian.github.io/GenPA-website/)
 [![Hugging Face 模型权重](docs/assets/badges/weights.svg)](https://huggingface.co/Deduktive/GenPA)
 [![Hugging Face LIBERO 数据集](docs/assets/badges/dataset.svg)](https://huggingface.co/datasets/Deduktive/GenPA-LIBERO)
@@ -120,10 +120,14 @@ GENPA_EVAL_OUTPUT="$PWD/outputs/libero-one-episode" bash scripts/libero/evaluate
 
 ```bibtex
 @misc{deng2026genpa,
-  title  = {{GenPA}: Image Generators as Efficient Robot Policies},
-  author = {Deng, Zian and Zhang, Tianyi and Zheng, Zilong and Liu, Ziyu and Zhang, Tao and Lyu, Yao and Li, Shengbo Eben},
-  year   = {2026},
-  url    = {https://deng-zian.github.io/GenPA-website/}
+  title = {{GenPA}: Image Generators as Efficient Robot Policies},
+  author = {Deng, Zian and Zhang, Tianyi and Zheng, Zilong and Liu, Ziyu
+            and Zhang, Tao and Lyu, Yao and Li, Shengbo Eben},
+  year = {2026},
+  eprint = {2611.27446},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  url = {https://arxiv.org/abs/2611.27446}
 }
 ```
 

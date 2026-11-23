@@ -1,6 +1,6 @@
 # Results and evaluation protocols
 
-The paper reports success rates for standard LIBERO, LIBERO-Plus and RoboTwin 2.0. [Paper](https://deng-zian.github.io/GenPA-website/assets/genpa-paper.pdf)
+The paper reports success rates for standard LIBERO, LIBERO-Plus and RoboTwin 2.0. [Paper on arXiv](https://arxiv.org/abs/2611.27446)
 
 ## Main checkpoint
 
