@@ -131,4 +131,14 @@ GENPA_EVAL_OUTPUT="$PWD/outputs/libero-one-episode" bash scripts/libero/evaluate
 }
 ```
 
-[代码许可证](LICENSE) · [第三方资源说明](THIRD_PARTY_NOTICES.md)
+## 致谢
+
+感谢 [ImageWAM](https://github.com/yuyangalin/ImageWAM) 作者开源 FLUX.2 封装和数据读取代码。
+
+## 许可证
+
+| 资源 | 适用许可 |
+| --- | --- |
+| GenPA 代码 | [MIT](LICENSE)。随附的第三方组件沿用[各自的上游许可](THIRD_PARTY_NOTICES.md)。 |
+| 策略权重 | [Apache-2.0](https://huggingface.co/Deduktive/GenPA/blob/main/LICENSE) |
+| GenPA-LIBERO 数据集 | LIBERO 原始材料适用 Apache-2.0，GenPA 新增内容适用 CC BY 4.0。具体范围见[数据集许可说明](https://huggingface.co/datasets/Deduktive/GenPA-LIBERO/blob/main/LICENSE)。 |

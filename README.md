@@ -131,4 +131,14 @@ For the full benchmark, omit `--task-file` and `--trials` and choose a fresh out
 }
 ```
 
-[Code license](LICENSE) · [Third-party assets](THIRD_PARTY_NOTICES.md)
+## Acknowledgements
+
+We thank the [ImageWAM](https://github.com/yuyangalin/ImageWAM) authors for sharing their FLUX.2 wrapper and data-loading code.
+
+## Licenses
+
+| Resource | License |
+| --- | --- |
+| GenPA code | [MIT](LICENSE). Bundled third-party components retain their [upstream licenses](THIRD_PARTY_NOTICES.md). |
+| Policy checkpoints | [Apache-2.0](https://huggingface.co/Deduktive/GenPA/blob/main/LICENSE) |
+| GenPA-LIBERO dataset | Apache-2.0 for upstream LIBERO material and CC BY 4.0 for GenPA contributions. See the [dataset license](https://huggingface.co/datasets/Deduktive/GenPA-LIBERO/blob/main/LICENSE) for scope. |

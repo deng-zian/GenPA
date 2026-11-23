@@ -31,7 +31,7 @@ inference = [
 [project.urls]
 Homepage = "https://deng-zian.github.io/GenPA-website/"
 Repository = "https://github.com/deng-zian/GenPA"
-Paper = "https://openreview.net/forum?id=WA0THUR3x9"
+Paper = "https://arxiv.org/abs/2611.27446"
 
 [tool.setuptools.packages.find]
 where = ["src"]

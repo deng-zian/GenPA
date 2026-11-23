@@ -1,6 +1,6 @@
 # Third-party acknowledgements
 
-This source release builds on [ImageWAM](https://github.com/yuyangalin/ImageWAM). The upstream MIT notice is retained in `LICENSE`. GenPA-specific changes include the reference-token action pathway, the regression adapter, perception co-training, the benchmark-specific data interfaces and evaluation launchers.
+GenPA reuses code from [ImageWAM](https://github.com/yuyangalin/ImageWAM), including the FLUX.2 transformer wrapper and parts of the LeRobot data loader. Its MIT copyright and permission notice is preserved in [LICENSE](LICENSE). Bundled third-party components retain their respective licenses and notices.
 
 The bundled `third_party/flux2` source is from [Black Forest Labs FLUX.2](https://github.com/black-forest-labs/flux2). Its Apache-2.0 license is included alongside the source. The included LeRobot data-reading utilities retain their upstream copyright notices.
 

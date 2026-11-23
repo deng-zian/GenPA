@@ -1,1 +1,1 @@
-"""GenPA research package, based on the ImageWAM codebase."""
+"""GenPA robot policies."""
