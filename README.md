@@ -24,7 +24,7 @@ GenPA adapts a pretrained FLUX.2 [klein] base 4B image generator to predict **16
 
 | Benchmark | Task success with the released depth policy |
 | --- | --- |
-| LIBERO | **99.10%** on the checkpoint-selection states. **98.33 ± 0.29%** across three independent sets of initial states with the same checkpoint. |
+| LIBERO | **99.10%** on the checkpoint-selection states. |
 | LIBERO-Plus | **83.79%** with Clean instructions and **83.01%** with Official instructions. |
 | RoboTwin 2.0 | **92.08%** on Clean and **90.82%** on Randomized, averaging **91.45%**. |
 
